@@ -25,10 +25,24 @@ class Platform {
         var currentStudent = allStudents.find { it.getEmail() == studentEmail}
 
         currentStudent?.let {
+            var currStudentName = currentStudent.getName()
+
+            println("O Aluno $currStudentName, está matriculado nos seguintes cursos : ")
             for(course in it.showAllEnrolls()) {
-                println(course)
+                println(allCourses[course]?.getName())
             }
+            return
         }
+
+        println("Aluno não encontrado!")
+    }
+
+    fun showStudentsByCourse(courseID: Int) {
+        var currentStudentCourses = allCourses.filter { it.key == courseID }.toMap()
+
+        println("Os cursos matriculados são : ")
+        println(allCourses[courseID]?.showAllStudentsEnrolleds())
+
     }
 
     fun enrollStudent(studentEmail: String, courseID: Int) {

@@ -8,12 +8,19 @@ class Course (
     private var description: String = "",
     private var difficulty : Nivel = Nivel.INDEFINIDO
 ){
+
+    private val enrolledStudents: MutableCollection<String?> = mutableListOf<String?>()
     fun getName(): String {
         return name
     }
     fun getID(): Int {
         return courseID
     }
+
+    fun showAllStudentsEnrolleds(): MutableCollection<String?> {
+        return enrolledStudents
+    }
+
 
     fun showCourseInfo() {
         println("Course Name : $name")

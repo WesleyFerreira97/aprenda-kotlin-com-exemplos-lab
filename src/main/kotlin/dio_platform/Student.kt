@@ -12,6 +12,9 @@ class Student (
     fun setName(newName: String) {
         name = newName
     }
+    fun getName(): String {
+        return name
+    }
     fun getEmail(): String {
         return email
     }

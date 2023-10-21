@@ -48,10 +48,9 @@ fun main() {
     platformInstance.enrollStudent(student2.getEmail(), reactCourse.getID())
     platformInstance.enrollStudent(student2.getEmail(), javaCourse.getID())
 
-    // Consultar quais cursos cada aluno está cadastrado
+    // Consultar quais cursos cada aluno está cadastrado e exibir os nomes
     platformInstance.showStudentCoursesEnrolled(student2.getEmail())
+
+    // Consultar quais alunos cada curso possui
+    platformInstance.showStudentsByCourse(reactCourse.getID())
 }
-
-
-// Prciso fazer querys para :
-// Consultar quais alunos cada curso possui
