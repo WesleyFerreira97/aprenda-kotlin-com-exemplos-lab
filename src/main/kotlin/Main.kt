@@ -11,22 +11,47 @@ fun main() {
         33041234245234
     )
 
+    val student2 = Student(
+        "Draven",
+        "Draven",
+        "theDraven@draven.com",
+        "99999",
+        1
+    )
+
     val reactCourse = Course(
         1,
         "React Developer",
         50,
         "React developer Advanced"
     )
+    val javaCourse = Course(
+        2,
+        "Java Developer",
+        70,
+        "Java developer Advanced"
+    )
 
     val platformInstance = Platform()
+    // Registra Estudantes
     platformInstance.registerStudent(student1)
-    platformInstance.registerCourse(reactCourse)
+    platformInstance.registerStudent(student2)
 
+    // Registra Cursos
+    platformInstance.registerCourse(reactCourse)
+    platformInstance.registerCourse(javaCourse)
+
+    // Exibe todos os Cursos adicionados
     platformInstance.showAllCourses()
-    println(reactCourse.getName())
+
+    // Matricula estudantes em cursos
+    platformInstance.enrollStudent(student2.getEmail(), reactCourse.getID())
+    platformInstance.enrollStudent(student2.getEmail(), javaCourse.getID())
+
+    // Consultar quais cursos cada aluno está cadastrado
+    platformInstance.showStudentCoursesEnrolled(student2.getEmail())
 }
 
 
 // Prciso fazer querys para :
-// Consultar quais cursos cada aluno está cadastrado
 // Consultar quais alunos cada curso possui
