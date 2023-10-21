@@ -16,8 +16,8 @@ class Platform {
     }
 
     fun showAllCourses() {
-        for(course in allCourses) {
-            println("O curso é : ${course}")
+        for((key, course) in allCourses) {
+            println("O curso é : ${course.getName()}")
         }
     }
 
