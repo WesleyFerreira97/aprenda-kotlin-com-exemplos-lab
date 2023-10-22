@@ -1,4 +1,29 @@
-# Aprenda Kotlin Com Exemplos: Desafio de Projeto (Lab)
+<p align="center">
+  <img src="https://github.com/WesleyFerreira97/aprenda-kotlin-com-exemplos-lab/assets/7539166/a3e70f6f-252e-40f2-a561-f4691cfc7cf6" height="1000px" />
+</div>
+
+# Projeto Dio Kotlin - Abstraindo formações
+Projeto realizado pelo bootcamp da DIO, foi estruturado pensando na relação entre Alunos, Cursos e o gerenciamento das informações, foi implementado algumas features ( mencionadas abaixo ) visando entregar esse gerenciamento de forma dinâmica a plataforma
+
+Foram criadas duas classes, Student e Course as quais recebem os dados com seus respectivos requisitos, uma vez gerada, as mesmas podem ser utilizadas para o registro na classe Platform, classe essa que é responsável pelo gerenciamento dos cursos e alunos
+
+Entre as features temos: 
+- Cadastro de Alunos
+- Cadastro de Cursos
+- Exibição de todos os cursos disponíveis
+- Matricula de alunos em cursos por meio do ID do curso
+- Consulta de quais cursos algum aluno especifico se encontra cadastrado
+- Consulta uma lista de todos alunos registrados em algum curso
+
+
+<br>    
+<br>
+<br>
+<br>
+
+---
+# Aprenda Kotlin Com Exemplos: Desafio de Proj
+eto (Lab)
 
 Desafio de Projeto criado para avaliação do conteúdo técnico explorado no repositório [aprenda-kotlin-com-exemplos](https://github.com/digitalinnovationone/aprenda-kotlin-com-exemplos). **Nesse contexto, iremos abstrair o seguinte domínio de aplicação:**
 
@@ -8,3 +33,4 @@ Desafio de Projeto criado para avaliação do conteúdo técnico explorado no re
 ```kotlin
 TODO("Crie uma solução em Koltin abstraindo esse domínio. O arquivo [desafio.kt] te ajudará 😉")
 ```
+
